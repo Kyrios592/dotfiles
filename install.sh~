@@ -61,8 +61,8 @@ make && sudo make install
 cd ..
 
 mkdir -p ~/.config/panel
-sudo echo -e -n "export PANEL_FIFO=\"/tmp/panel-fifo/\"" >> /etc/profile
-sudo echo -e -n "export PATH=$PATH:~/.config/panel/" >> /etc/profile
+sudo echo -e "export PANEL_FIFO=\"/tmp/panel-fifo/\"" >> /etc/profile
+sudo echo -e "export PATH=$PATH:~/.config/panel/"
 
 cp ./bspwm/examples/panel/panel ~/.config/panel
 cp ./bspwm/examples/panel/panel_bar ~/.config/panel
