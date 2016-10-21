@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo pacman -S git
+
 mkdir	Downloads
 cd	Downloads
 
@@ -12,14 +14,12 @@ cd yaourt
 makepkg -si
 cd ..
 
-yaourt -S git python3
-
 git clone https://github.com/baskerville/bspwm.git
 git clone https://github.com/baskerville/sxhkd.git
 
 yaourt -S libxcb xcb-util xcb-util-keysyms xcb-util-wm
 
-yaourt -S gcc make
+yaourt -S gcc make python3
 
 cd bspwm
 make
