@@ -12,6 +12,8 @@ cd yaourt
 makepkg -si
 cd ..
 
+yaourt -S git python3
+
 git clone https://github.com/baskerville/bspwm.git
 git clone https://github.com/baskerville/sxhkd.git
 
